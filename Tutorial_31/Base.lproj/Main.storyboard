@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9t9-aI-bDN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Book Store-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,104 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="jMw-Wf-vj7">
+                                <rect key="frame" x="-1106" y="-148" width="640" height="960"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Wavelet Tour of Signal Processing" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdG-aj-9CF">
+                                <rect key="frame" x="373" y="176" width="145" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Mze-9b-IvQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stephany Mallat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2Y-h7-S10">
+                                <rect key="frame" x="373" y="236" width="133" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="N1M-ys-wd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hg1-wq-6cm">
+                                <rect key="frame" x="408" y="265" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="hTN-gv-wFk"/>
+                                </constraints>
+                                <state key="normal" title="Buy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9O-Ee-7gF">
+                                <rect key="frame" x="59" y="416" width="471" height="94"/>
+                                <string key="text">This book is intended to serve as an invaluable reference for anyone concerned with the application of wavelets to signal processing. It has evolved from material used to teach "wavelet signal processing" courses in electrical engineering departments at Massachusetts Institute of Technology and Tel Aviv University, as well as applied mathematics departments at the Courant Institute of New York University and École Polytechnique in Paris. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="S7k-QO-6y1">
+                                <rect key="frame" x="25" y="142" width="100" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ZVG-vm-Pjo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S7k-QO-6y1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="9" id="31S-Ui-e0w"/>
+                            <constraint firstItem="jMw-Wf-vj7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-1106" id="3zX-4j-V4h"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="q9O-Ee-7gF" secondAttribute="bottom" constant="90" id="7yI-dc-ST9"/>
+                            <constraint firstItem="jMw-Wf-vj7" firstAttribute="centerY" secondItem="Hg1-wq-6cm" secondAttribute="centerY" constant="52" id="C5q-I8-3sb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WdG-aj-9CF" secondAttribute="trailing" constant="66" id="GoE-Wl-gfv"/>
+                            <constraint firstItem="jMw-Wf-vj7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-36" id="K8q-nE-rym"/>
+                            <constraint firstItem="WdG-aj-9CF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="112" id="Kp8-It-uCS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q9O-Ee-7gF" secondAttribute="trailing" constant="54" id="Nf9-kn-3Ix"/>
+                            <constraint firstItem="q9O-Ee-7gF" firstAttribute="leading" secondItem="S7k-QO-6y1" secondAttribute="leading" constant="34" id="Y1a-Ec-LAE"/>
+                            <constraint firstItem="WdG-aj-9CF" firstAttribute="centerX" secondItem="i2Y-h7-S10" secondAttribute="centerX" constant="6" id="af5-nv-GWT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jMw-Wf-vj7" secondAttribute="trailing" constant="-37" id="kJx-FR-kVF"/>
+                            <constraint firstItem="Hg1-wq-6cm" firstAttribute="top" secondItem="i2Y-h7-S10" secondAttribute="bottom" constant="8" id="qGx-C7-HVD"/>
+                            <constraint firstItem="S7k-QO-6y1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="78" id="scn-Bt-evh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i2Y-h7-S10" secondAttribute="trailing" constant="78" id="tRf-lm-ThC"/>
+                            <constraint firstAttribute="trailing" secondItem="Hg1-wq-6cm" secondAttribute="trailing" constant="146" id="tqO-pq-CX1"/>
+                            <constraint firstItem="i2Y-h7-S10" firstAttribute="top" secondItem="WdG-aj-9CF" secondAttribute="bottom" constant="8" id="w1c-iF-i1q"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K8q-nE-rym"/>
+                                <exclude reference="kJx-FR-kVF"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Book Store" id="Ewz-EQ-jAk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1208" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b6b-Yd-64Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9t9-aI-bDN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cLZ-qC-jIx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="6iO-GQ-l73"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCT-mm-xEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="306"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.png" width="640" height="960"/>
+        <image name="cover.jpeg" width="128" height="192"/>
+    </resources>
 </document>
