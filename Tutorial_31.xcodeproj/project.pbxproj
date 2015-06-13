@@ -15,7 +15,6 @@
 		845658A61B2B914400FD8506 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845658A41B2B914400FD8506 /* LaunchScreen.xib */; };
 		845658B21B2B914400FD8506 /* Tutorial_31Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845658B11B2B914400FD8506 /* Tutorial_31Tests.m */; };
 		845658BC1B2B92F100FD8506 /* cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 845658BB1B2B92F100FD8506 /* cover.jpeg */; };
-		845658C01B2B932700FD8506 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 845658BF1B2B932700FD8506 /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +42,6 @@
 		845658B01B2B914400FD8506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845658B11B2B914400FD8506 /* Tutorial_31Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial_31Tests.m; sourceTree = "<group>"; };
 		845658BB1B2B92F100FD8506 /* cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cover.jpeg; path = ../../../../Desktop/cover.jpeg; sourceTree = "<group>"; };
-		845658BF1B2B932700FD8506 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +83,6 @@
 		845658941B2B914300FD8506 /* Tutorial_31 */ = {
 			isa = PBXGroup;
 			children = (
-				845658BF1B2B932700FD8506 /* bg.png */,
 				845658BB1B2B92F100FD8506 /* cover.jpeg */,
 				845658991B2B914300FD8506 /* AppDelegate.h */,
 				8456589A1B2B914300FD8506 /* AppDelegate.m */,
@@ -205,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845658C01B2B932700FD8506 /* bg.png in Resources */,
 				845658A11B2B914400FD8506 /* Main.storyboard in Resources */,
 				845658BC1B2B92F100FD8506 /* cover.jpeg in Resources */,
 				845658A61B2B914400FD8506 /* LaunchScreen.xib in Resources */,
