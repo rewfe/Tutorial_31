@@ -24,27 +24,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="S7k-QO-6y1">
-                                <rect key="frame" x="236" y="109" width="128" height="192"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stephany Mallat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ho-TS-ypx">
                                 <rect key="frame" x="222" y="361" width="124" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Wavelet Tour of Signal Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJN-wF-gZr">
-                                <rect key="frame" x="146" y="316" width="276" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxE-jw-l0N">
-                                <rect key="frame" x="285" y="390" width="30" height="30"/>
+                                <rect key="frame" x="275" y="390" width="30" height="30"/>
                                 <state key="normal" title="Buy">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lt2-J0-P6t"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Wavelet Tour of Signal Processing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJN-wF-gZr">
+                                <rect key="frame" x="146" y="316" width="276" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="S7k-QO-6y1">
+                                <rect key="frame" x="236" y="109" width="128" height="192"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -59,7 +62,7 @@
                             <constraint firstAttribute="centerY" secondItem="SxE-jw-l0N" secondAttribute="centerY" constant="-105" id="Zp4-BT-Vo8"/>
                             <constraint firstAttribute="centerY" secondItem="0Ho-TS-ypx" secondAttribute="centerY" constant="-71.5" id="omJ-Jm-INe"/>
                             <constraint firstAttribute="centerX" secondItem="q9O-Ee-7gF" secondAttribute="centerX" constant="-5.5" id="qiF-TJ-NpJ"/>
-                            <constraint firstItem="SxE-jw-l0N" firstAttribute="centerX" secondItem="S7k-QO-6y1" secondAttribute="centerX" id="ucI-B9-995"/>
+                            <constraint firstItem="SxE-jw-l0N" firstAttribute="centerX" secondItem="S7k-QO-6y1" secondAttribute="centerX" constant="-10" id="ucI-B9-995"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Book Store" id="Ewz-EQ-jAk"/>

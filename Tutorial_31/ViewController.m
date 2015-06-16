@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buy:(id)sender {
+    [[[UIAlertView alloc] initWithTitle:@"Confirmation"
+                                message:NSLocalizedString(@"BOOK_PURCHASE", @"Message")
+                               delegate:nil
+                      cancelButtonTitle:@"OK"
+                      otherButtonTitles:nil] show];
+}
 @end

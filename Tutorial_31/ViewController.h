@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)buy:(id)sender;
 
 @end
 
